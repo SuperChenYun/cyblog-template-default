@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* rewrite bootstrap */
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-control.left {
+    background-image:linear-gradient(to right,rgba(131, 131, 131, 0.5) 0,rgba(0,0,0,.0001) 100%);
+}
+.carousel-control.right{
+    background-image:linear-gradient(to left,rgba(131, 131, 131, 0.5) 0,rgba(0,0,0,.0001) 100%);
+}
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 968px) { 
+    .slider,.slider .item .image{
+        height: 16rem;
+    }   
+}
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 768px) { 
+    .slider,.slider .item .image{
+        height: 11rem;
+    }   
+}
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 968px) { 
+    .slider,.slider .item .image{
+        height: 20rem;
+    }   
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) { 
+    .slider,.slider .item .image{
+        height: 22rem;
+    }   
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) { 
+    .slider,.slider .item .image{
+        height: 30rem;
+    }    
+}
+
+.carousel-indicators li {
+    margin: auto 0.333rem !important;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1260px;
+    }
+}
+/* app */
+html,div,span,p,h1,h2,h3,h4,h5,h6{
+    padding:0px;
+    margin: 0px;
+}
+html {
+    font-size: 18px;
+}
+body {
+    padding-top: 50px;
+}
+ul,ol,li{
+    list-style: none;
+}
+
+.slider{
+    overflow: hidden;
+}
+.slider .item .image {
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center ;
+}
+
+.content {
+    padding-top: 2.6rem;
+}
+
+.article-list{
+    padding: 0;
+}
+.article-list .master-img{
+    width: 100%;
+    padding-top: 58.88%;
+    background-repeat: no-repeat;
+    background-color: #eeeeee;
+    background-size: cover;
+    position: relative;
+}
+.article-list .article-item{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.article-list .article-item .more{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.article-list .article-item .article-text {
+    margin-top:1.2rem;
+}
+.article-list .article-item .article-text section {
+    margin-top:0.8rem;
+    line-height: 1.6rem;
+}
+
+.footer{
+    background: #000;
+    color:#999999;
+    padding: 2rem 0 1rem 0;
+}
+.footer h4 {
+    padding-bottom: 1.6rem;
+}
+.footer-menu{
+    padding-left: 0;
+    line-height: 1.6rem
+}
+
+/* 页脚二维码 */
+.wechat_qr{
+    width: 80%;
+}
